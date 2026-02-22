@@ -1,0 +1,109 @@
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background-color: #fff; 
+}
+
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 8%;
+  z-index: 2;
+  padding-right: 0;
+  padding-left: 8%;
+  padding-bottom: 200px;
+
+}
+.hero-content h1 {
+  font-size: 48px;
+  font-weight: 600;
+  color: #222;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  max-width: 650px;
+}
+.share-wrapper {
+  position: relative;
+  color: #1a73e8;
+  display: inline-block;
+}
+
+.underline-img {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+.hero-content p {
+  color: #666;
+  font-size: 1.1rem;
+  font-weight: 400px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  max-width: 500px;
+}
+
+.cta-text {
+  font-weight: 500;
+  color: #333 !important;
+}
+.app-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.app-buttons img {
+  height: 45px;
+  cursor: pointer;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  transform: translateY(100px);
+  padding-bottom: 50px;
+  
+}
+
+.hero-image img {
+  max-width: 120%; 
+  height: auto;
+  z-index: 3;
+  width: 800px;
+}
+.bg-patterns {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width:50%;
+  height: 110%;
+  background-size: 90%;
+  background-image: url('src/assets/images/Frame.png');
+  background-repeat: no-repeat;
+  background-position: right -60px  ;
+
+  z-index: 1;
+}
+@media (max-width: 992px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 50px;
+  }
+  .hero-image img {
+    max-width: 100%;
+  }
+  .app-buttons {
+    justify-content: center;
+  }
+}
