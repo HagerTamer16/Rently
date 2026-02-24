@@ -1,7 +1,10 @@
 import React from 'react';
 import Navbar from './components/hager/Navbar'; 
 import Hero from './components/hager/Hero';
+import HowItWork from './components/hager/HowItWork';
+import HowToRent from './components/hager/HowToRent';
 import './index.css';
+
 
 
 function App() {
@@ -9,11 +12,10 @@ function App() {
     <div className="App">
       <Navbar />
       <Hero />
+      <HowItWork />
+      <HowToRent />
       
-      {/* السكشن ده بس عشان يظهر لك السكرول وتتطمني إن الموقع شغال */}
-  <div style={{ height: '100vh', background: '#f9f9f9' }}>
-    <h2 style={{ textAlign: 'center', paddingTop: '50px' }}>باقي محتوى الموقع هنا</h2>
-  </div>
+  
     </div>
   );
 }
